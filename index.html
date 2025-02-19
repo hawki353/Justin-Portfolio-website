@@ -23,6 +23,8 @@
             color: var(--secondary-color);
             padding: 1.5rem;
             text-align: center;
+            font-size: 1.8rem;
+            font-weight: bold;
         }
 
         nav {
@@ -71,15 +73,15 @@
 
     <section class="section" id="about">
         <h3>About Me</h3>
-        <p>I am a curious and determined individual who enjoys tackling real-world problems with technology. My work primarily involves data analysis, programming, and building creative solutions using Python, SQL, and visualization tools. Whether it’s generating insights from raw data or building engaging projects, I love exploring new concepts and continuously improving my skills.</p>
+        <p>I am a passionate and detail-oriented professional with a strong background in data analysis, programming, and problem-solving. My work revolves around using Python, SQL, and visualization tools to uncover insights and create efficient solutions. I am always excited to learn new technologies and apply them to real-world challenges.</p>
     </section>
 
     <section class="section" id="projects">
         <h3>Projects</h3>
 
         <div class="interactive-slot">
-            <h4>Data Generator Project (MSU Burgess Institute of Science)</h4>
-            <p>For this project, I built a simple yet effective data generator to create mock datasets for testing and analysis. This was particularly useful for simulating real-world data before working with actual company datasets.</p>
+            <h4>My Data Generator Code</h4>
+            <p>This project was developed to create mock datasets for testing and analysis. By simulating real-world data, I was able to experiment with data processing techniques before handling real company datasets. The generated CSV files were particularly helpful for predictive modeling and visualization tasks.</p>
             <pre>
 import random
 import pandas as pd
@@ -87,7 +89,7 @@ import pandas as pd
 names = ["Stephen", "Mark", "Ben", "Abby", "Emma", "Olivia", "Liam", "Noah", "Sophia", "Mason"]
 data = []
 
-for _ in range(100):
+for _ in range(500):
     entry = {
         "Name": random.choice(names),
         "Age": random.randint(18, 60),
@@ -104,8 +106,8 @@ print("Mock data saved to mock_data.csv")
         </div>
 
         <div class="interactive-slot">
-            <h4>Data Visualization Project</h4>
-            <p>I created this project to explore how visual representations can help interpret data more effectively. Using Matplotlib, I built a simple bar chart that visualizes randomly generated scores.</p>
+            <h4>My Data Visualization Code</h4>
+            <p>This project focuses on the power of visual storytelling. By using Matplotlib and NumPy, I created an interactive bar chart to visualize random scores. This method allows for a better understanding of data distribution and outlier detection.</p>
             <pre>
 import random
 import matplotlib.pyplot as plt
@@ -114,8 +116,8 @@ import numpy as np
 names = ["David", "Antonio", "Nolan", "Ashton", "Bethany", "Lily", "Ethan", "Isabella", "James", "Charlotte"]
 scores = [random.randint(50, 100) for _ in names]
 
-plt.figure(figsize=(10, 5))
-colors = np.random.rand(len(names), 3)  # Generate random colors
+plt.figure(figsize=(12, 6))
+colors = np.random.rand(len(names), 3)
 plt.bar(names, scores, color=colors)
 
 plt.xlabel("Names")
